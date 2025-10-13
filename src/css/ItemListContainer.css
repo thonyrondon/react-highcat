@@ -1,0 +1,20 @@
+button {
+  display: block;
+  margin: 0 auto;
+  background-color: #4a4a4a;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: "Segoe UI", sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+  color: #f0f0f0;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
