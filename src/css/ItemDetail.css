@@ -1,0 +1,13 @@
+.deta {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.img-deta {
+  margin: 15px;
+  max-height: 250px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,17 @@
+.cont-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+  text-align: center;
+}
+
+.card-img {
+  margin: 15px;
+  max-height: 250px;
+  max-width: 280px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}

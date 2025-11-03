@@ -1,16 +1,23 @@
-import Swal from "sweetalert2";
-import "../css/ItemListContainer.css";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { leerArticulos } from "../mock/AsyncService";
+import ItemList from "./ItemList";
 
-const ItemListContainer = ({ children }) => {
-  const handleClick = () => {
-    Swal.fire({
-      title: "¡HOLAA!",
-      text: "BIENVENIDOS A MI TIENDA ONLINE: HIGH CAT 🐈‍⬛",
-      confirmButtonText: "EXCELENTE",
-    });
-  };
-
-  return <button onClick={handleClick}>{children}</button>;
+const ItemListContainer = () => {
+  const [data, setData] = useState([]);
+  const { type } = useParams();
+  useEffect(() => {
+    leerArticulos()
+      .then((res) => {
+        if (type) {
+          setData(res.filter((art) => art.category === type));
+        } else {
+          setData(res);
+        }
+      })
+      .catch((error) => console.log(error));
+  }, [type]);
+  return <ItemList data={data} />;
 };
 
 export default ItemListContainer;
