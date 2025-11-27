@@ -26,7 +26,6 @@ Si desea ver el proyecto online, puede ingresar al siguiente link: [HIGH CAT](ht
 
 - [Firebase](): utilizado como base de datos.
 - [React Icons](): utilizada para incorporar íconos de manera sencilla en la interfaz.
-- [React Router Dom](): utilizada para la navegacion por rutas del proyecto.
 - [React Router Dom](): utilizada para la navegación y gestión de rutas dentro de la aplicación.
 - [React Bootstrap](): utilizada para el styling de la app
 - [SweetAlert2](): utilizada para mostrar alertas y modales personalizados con un diseño atractivo.
