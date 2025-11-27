@@ -9,7 +9,7 @@ El objetivo es practicar **separación de responsabilidades**, **filtrado de cat
 
 Buscamos convertirnos en la tienda virtual líder en el mercado de productos para gatos, reconocida por la excelencia en calidad y servicio. Aspiramos a ampliar nuestra oferta y llegar a más hogares, contribuyendo al bienestar de los gatos en todo el mundo.
 
-![imageApp](/public/view.png)
+![imageApp](/public/img/view.png)
 
 ### Instalación ⚙️
 
