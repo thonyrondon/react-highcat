@@ -21,7 +21,7 @@ function App() {
             path="/"
             element={
               <HeroSection>
-                <h1>PRESIONA PARA SALUDARTE!</h1>
+                <h1>PRESIONA PARA INFORMARTE!</h1>
               </HeroSection>
             }
           />

@@ -16,13 +16,16 @@ const CartView = () => {
       if (result.isConfirmed) {
         clear();
       } else if (result.isDenied) {
-        //poner algo si rechaza
+        Swal.fire({
+          icon: "info",
+          text: "No se borró nada 😊",
+        });
       }
     });
   };
   return (
     <div>
-      <h1>Tu carrito 🛒</h1>
+      <h1>Resumen de articulos seleccionados 🛒</h1>
       <div>
         {cart.map((compra) => (
           <div
@@ -49,7 +52,7 @@ const CartView = () => {
           </div>
         ))}
       </div>
-      {/* crear una funcion que devuelva el total a pagar */}
+
       <span>Total a pagar: ${total()},00</span>
       <div
         style={{

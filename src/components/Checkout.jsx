@@ -36,7 +36,6 @@ const Checkout = () => {
       };
 
       const ventas = collection(db, "orders");
-      //agregar el doc
       addDoc(ventas, order)
         .then((res) => {
           setOrderId(res.id);

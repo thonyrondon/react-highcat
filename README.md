@@ -1,16 +1,34 @@
-# React + Vite
+# 🐱 High Cat - E‑Commerce en React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Descripción:
 
-Currently, two official plugins are available:
+High Cat es un proyecto de **e‑commerce** desarrollado con **React + Vite**, orientado al aprendizaje de las bases de un sistema de compras online.
+El objetivo es practicar **separación de responsabilidades**, **filtrado de categorías**, **gestión de carrito de compras** y **generación de órdenes de compra** conectadas con **Firebase**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🐈‍⬛ Visión:
 
-## React Compiler
+Buscamos convertirnos en la tienda virtual líder en el mercado de productos para gatos, reconocida por la excelencia en calidad y servicio. Aspiramos a ampliar nuestra oferta y llegar a más hogares, contribuyendo al bienestar de los gatos en todo el mundo.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![imageApp](/public/view.png)
 
-## Expanding the ESLint configuration
+### Instalación ⚙️
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone el repositorio.
+2. Hacer el comando `cd react-highcat` para moverse a la carpeta raiz del proyecto.
+3. Instale dependencias con el comando `npm install`.
+4. Para levantar el proyecto de manera local ejecute el comando `npm run dev`
+
+### Version Host 💻
+
+Si desea ver el proyecto online, puede ingresar al siguiente link: [HIGH CAT](https://react-highcat.vercel.app/)
+
+### 📖 Librerías utilizadas:
+
+- [Firebase](): utilizado como base de datos.
+- [React Icons](): utilizada para incorporar íconos de manera sencilla en la interfaz.
+- [React Router Dom](): utilizada para la navegacion por rutas del proyecto.
+- [React Router Dom](): utilizada para la navegación y gestión de rutas dentro de la aplicación.
+- [React Bootstrap](): utilizada para el styling de la app
+- [SweetAlert2](): utilizada para mostrar alertas y modales personalizados con un diseño atractivo.
+
+Desarrollado por Anthony Rondón 😎

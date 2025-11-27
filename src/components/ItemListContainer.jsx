@@ -24,26 +24,11 @@ const ItemListContainer = () => {
             ...doc.data(),
           };
         });
-        // Aquí podrías hacer algo con `list`, como setProducts(list)
         setData(list);
       })
       .catch((error) => console.log(error))
       .finally(() => setLoader(false));
   }, [type]);
-
-  // useEffect(() => {
-  //   setLoader(true);
-  //   leerArticulos()
-  //     .then((res) => {
-  //       if (type) {
-  //         setData(res.filter((art) => art.category === type));
-  //       } else {
-  //         setData(res);
-  //       }
-  //     })
-  //     .catch((error) => console.log(error))
-  //     .finally(() => setLoader(false));
-  // }, [type]);
 
   return (
     <>
@@ -51,11 +36,6 @@ const ItemListContainer = () => {
         <Loader />
       ) : (
         <div>
-          <h1 className="text-success">
-            {type && (
-              <span style={{ textTransform: "capitalize" }}>{type}</span>
-            )}
-          </h1>
           <ItemList data={data} />;
         </div>
       )}

@@ -1,4 +1,4 @@
-const articulos = [
+export const articulos = [
   {
     id: "01",
     name: "Arena TKPet",

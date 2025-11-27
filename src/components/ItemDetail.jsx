@@ -5,8 +5,6 @@ import "../css/ItemDetail.css";
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ detalle }) => {
-  // const contexto = useContext(CartContext);
-  // console.log(contexto);
   const { cart, addItem } = useContext(CartContext);
   const [compra, setCompra] = useState(false);
   console.log(cart);
@@ -31,7 +29,6 @@ const ItemDetail = ({ detalle }) => {
       ) : (
         <ItemCount stock={detalle.stock} onAdd={onAdd} />
       )}
-      {/* <ItemCount stock={detalle.stock} onAdd={onAdd} /> */}
     </div>
   );
 };

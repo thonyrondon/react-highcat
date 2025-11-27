@@ -13,9 +13,7 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     setCargando(true);
-    //referencia de un documento
     const docRef = doc(db, "articulos", id);
-    //traer el documento
     getDoc(docRef)
       .then((res) => {
         if (res.data()) {
@@ -28,18 +26,10 @@ const ItemDetailContainer = () => {
       .finally(() => setCargando(false));
   }, [id]);
 
-  // useEffect(() => {
-  //   setCargando(true);
-  //   getOneArt(id)
-  //     .then((res) => setDetalle(res))
-  //     .catch((error) => console.log(error))
-  //     .finally(() => setCargando(false));
-  // }, [id]);
-
   if (invalid) {
     return (
       <div>
-        <h1> El producto no existe! 😱</h1>
+        <h1> El producto no existe! 😬</h1>
         <Link className="btn btn-dark" to="/todos">
           Volver a todas las categorias
         </Link>
@@ -47,12 +37,7 @@ const ItemDetailContainer = () => {
     );
   }
 
-  return (
-    <>
-      {cargando ? <Loader /> : <ItemDetail detalle={detalle} />}
-      {/* <ItemDetail detalle={detalle} /> */}
-    </>
-  );
+  return <>{cargando ? <Loader /> : <ItemDetail detalle={detalle} />}</>;
 };
 
 export default ItemDetailContainer;
